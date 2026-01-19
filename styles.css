@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+}
+.nav-container{
+    background-color: #412567;
+    width: 1600px;
+    height: 92px;
+}
+.nav-content{
+    display: flex;
+}
+.nav-container .nav-content{
+    width: 219px;
+    height: 32px;
+}
+.nav-container .nav-logo h2{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 800;
+}
+.nav-logo{
+    margin-top: 30px;
+    margin-left: 200px;
+}
+.nav-container .nav-logo .wave{
+    color: rgba(0, 0, 255, 0.918);
+    font-weight: 800;
+}
+.about-container{
+    margin-top: 36.5px;
+}
+.about{
+    display: flex;
+    gap: 32px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.about ul{
+    text-decoration: none;
+    
+}
+.about li{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.top-btn:hover{
+    background: burlywood;
+ }
+
+.btn1{
+    margin-top: 24px;
+    margin-right: 200px;
+}
+.sub-button{
+    width: 135px;
+    height: 44px;
+    border-radius: 1000px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(rgba(255, 0, 0, 0.726), rgba(0, 0, 255, 0.353));
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
