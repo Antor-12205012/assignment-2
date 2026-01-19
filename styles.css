@@ -78,3 +78,112 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
+.banner{
+    height: 760px;
+    width: 1600px;
+    align-items: center;
+    /* width: 100%; */
+    background: url("./assets/hero-bg.png");
+}
+.banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aquamarine; */
+
+}
+.banner .banner-items{
+    width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    gap: 40;
+    padding: 101px 525px 101px 525px;
+    /* background-color: #1A0B2E; */
+}
+.banner-items .bg-img{
+display: block;
+}
+.top-img{
+    position: absolute;
+    top: 275px;
+
+}
+.top-icon{
+    position: absolute;
+    left: 877px;
+    background-color:#00FF88;
+    width: 75px;
+    height: 35px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+     justify-content: center;
+    align-items: center;
+    gap: 10;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1A0B2E;
+    border-radius: 1000px;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+ 
+}
+.banner-content{
+    width: 550px;
+    height: 168px;
+    margin: 0 auto;
+    /* background-color: #00FF88; */
+}
+.banner-content h1{
+    text-align: center;
+    font-size: 60px;
+    height: 73px;
+    padding-bottom: 8px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+}
+.banner-content .items{
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 auto; 
+    text-align: center;
+}
+.btn2{
+    display: flex;
+    gap: 8px;
+    margin-top: 30px;
+    /* background-color: #00FF88; */
+    align-items: center;
+    justify-content: center;
+}
+.btn3{
+    /* display: flex;
+    gap: 8px; */
+    width: 201px;
+    height: 44px;
+    border-radius: 10000px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(rgba(218, 145, 10, 0.789), rgba(18, 18, 174, 0.745));
+    border: none;
+    cursor: pointer;
+}
+.btn4{
+    /* display: flex;
+    gap: 8px; */
+    width: 147px;
+    height: 44px;
+    border-radius: 10000px;
+    background-color:#412567;
+    color: #00FF88;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
