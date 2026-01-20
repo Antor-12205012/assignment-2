@@ -483,7 +483,14 @@
     color: #2cffb3;
     font-size: 14px;
 }
+
+.host-container{
+    /* background-color: #00FF88; */
+    margin-top: 120px;
+}
 .host-card {
+    /* background-color: #00FF88; */
+    height: 280px;
     background: linear-gradient(180deg, #2d145d, #1a0736);
     border-radius: 18px;
     padding: 30px;
@@ -492,17 +499,19 @@
     align-items: center;
 }
 .host-card img {
-    width: 110px;
-    height: 110px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
 .host-info h3 {
-    font-size: 22px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
     margin-bottom: 10px;
 }
 .host-info p {
-    font-size: 14px;
+    font-size: 16px;
     color: #ccc;
     line-height: 1.6;
 }
@@ -518,5 +527,9 @@
     background: #3a0f6b;
     display: grid;
     place-items: center;
-    font-size: 14px;
+}
+.socials span img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
