@@ -40,23 +40,19 @@
     color: rgba(0, 0, 255, 0.918);
     font-weight: 800;
 }
-
 .about-container {
     margin-top: 36.5px;
 }
-
 .about {
     display: flex;
     gap: 32px;
     text-decoration: none;
     list-style-type: none;
 }
-
 .about ul {
     text-decoration: none;
 
 }
-
 .about li {
     font-size: 16px;
     font-weight: 500;
@@ -102,7 +98,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: aquamarine; */
 
 }
 
@@ -116,7 +111,6 @@
     margin: 0 auto;
     gap: 40;
     padding: 101px 525px 101px 525px;
-    /* background-color: #1A0B2E; */
 }
 
 .banner-items .bg-img {
@@ -153,7 +147,6 @@
     width: 550px;
     height: 168px;
     margin: 0 auto;
-    /* background-color: #00FF88; */
 }
 
 .banner-content h1 {
@@ -177,14 +170,11 @@
     display: flex;
     gap: 8px;
     margin-top: 30px;
-    /* background-color: #00FF88; */
     align-items: center;
     justify-content: center;
 }
 
 .btn3 {
-    /* display: flex;
-    gap: 8px; */
     width: 201px;
     height: 44px;
     border-radius: 10000px;
@@ -197,7 +187,6 @@
 }
 
 .btn4 {
-    /* display: flex;
     gap: 8px; */
     width: 147px;
     height: 44px;
@@ -210,11 +199,9 @@
     cursor: pointer;
 }
 
-
 .podcast-container {
     max-width: 1600px;
     height: 647px;
-    /* background-color: #00FF88; */
 }
 
 .podcast {
@@ -227,7 +214,6 @@
     align-items: center;
     gap: 80;
 }
-
 .podcast .podcast-details {
     width: 1200px;
     height: 222px;
@@ -263,7 +249,6 @@
     border: 1px solid var(--#FFFFFF, rgba(255, 255, 255, 1));
     opacity: 0.1;
 }
-
 .stat-container {
     width: 1200px;
     height: 94px;
@@ -271,10 +256,8 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 80px;
-    /* background-color: aqua; */
     margin-top: 80px;
 }
-
 .podcast-container hr {
     margin-top: 80px;
 }
@@ -286,7 +269,6 @@
     font-weight: 900;
     text-align: center;
 }
-
 .stat p {
     color: #FFFFFF;
     font-size: 16px;
@@ -300,7 +282,6 @@
     padding: 80px 20px;
     background: linear-gradient(180deg, #1b0636, #0f0220);
 }
-
 .why-techwave h2 {
     /* background-color: #cfc3ff; */
     width: 1200px;
@@ -314,7 +295,6 @@
     margin-right: 200px;
 
 }
-
 .grid {
     width: 1200px;
     height: 783px;
@@ -339,46 +319,38 @@
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
-
 .card h3 {
     font-size: 24px;
     margin-bottom: 10px;
     font-weight: 700px;
     color: #FFFFFF;
 }
-
 .card p {
     font-size: 16px;
     line-height: 24px;
     color: #ecd0d0;
     font-weight: 400;
 }
-
 .icon {
     font-size: 30px;
     margin-bottom: 15px;
 }
-
 .card-1 {
     grid-area: card1;
     padding-top: 107px;
 }
-
 .card-2 {
     grid-area: card2;
     padding-top: 40px;
 }
-
 .card-3 {
     grid-area: card3;
     padding-top: 40px;
 }
-
 .card-4 {
     grid-area: card4;
     padding-top: 45px;
 }
-
 .card-5 {
     grid-area: card5;
     padding-top: 55px;
@@ -392,7 +364,7 @@
     padding: 120px 200px 120px;
     background-color: #1A0B2E;
 }
-.section-container{
+.section-container {
     /* background-color: aliceblue; */
     max-width: 1200px;
     height: 539px;
@@ -408,7 +380,6 @@
 .episodes {
     width: 1200px;
     height: 539px;
-    /* background-color: #00FF88; */
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
@@ -425,37 +396,36 @@
     background: linear-gradient(180deg, #2d145d, #1a0736);
     border-radius: 24px;
     padding: 16px;
-    /* background-color: #00FF88; */
 }
 .video-box {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; 
-  border-radius: 14px;
-  overflow: hidden;
-  cursor: pointer; 
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
 }
 .video-box iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 .custom-play {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(burlywood, blue);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 26px;
-  color: #fff;
-  z-index: 2;
-  transition: transform 0.3s;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(burlywood, blue);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    color: #fff;
+    z-index: 2;
+    transition: transform 0.3s;
 }
 .play-btn {
     position: absolute;
@@ -483,13 +453,11 @@
     color: #2cffb3;
     font-size: 14px;
 }
-
-.host-container{
-    /* background-color: #00FF88; */
+.host-container {
     margin-top: 120px;
 }
+
 .host-card {
-    /* background-color: #00FF88; */
     height: 280px;
     background: linear-gradient(180deg, #2d145d, #1a0736);
     border-radius: 18px;
@@ -528,41 +496,40 @@
     display: grid;
     place-items: center;
 }
-.socials span img{
+.socials span img {
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
 
-.footer-section{
+.footer-section {
     max-width: 1600px;
     height: 412px;
     background: url("./assets/footer-bg.png");
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
- .footer-box{
-    /* background-color:#c850ff ; */
+.footer-box {
     margin-top: 120px;
-} 
-.footer-container{
+}
+.footer-container {
     width: 1360px;
     height: 172px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
-.footer-container h1{
+.footer-container h1 {
     font-size: 56px;
     color: #FFFFFF;
 }
-.footer-container h1 span{
+.footer-container h1 span {
     color: blueviolet;
 }
-.footer-menu{
-    /* background-color: #00FF88; */
+
+.footer-menu {
     width: 544px;
     height: 24px;
     margin-top: 28px;
@@ -572,22 +539,25 @@
     align-items: center;
     gap: 40px;
 }
-.spotify{
+
+.spotify {
     display: flex;
     justify-content: center;
     gap: 8px;
-    /* align-items: center; */
 }
-.spotify .txt{
+
+.spotify .txt {
     font-size: 16px;
     font-weight: 500;
     color: #ffffffa2;
 }
-.spotify .img1{
+
+.spotify .img1 {
     height: 20px;
     width: 20px;
 }
-.copyright{
+
+.copyright {
     width: 1360px;
     height: 24px;
     display: flex;
@@ -596,7 +566,8 @@
     align-items: center;
     margin-top: 32px;
 }
-.copyright p{
+
+.copyright p {
     font-size: 16px;
     color: #fafafab1;
     font-weight: 400
