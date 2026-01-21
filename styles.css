@@ -3,70 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .container {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
-
 .nav-container {
     background-color: #412567;
     max-width: 1600px;
     height: 92px;
 }
-
 .nav-content {
     display: flex;
 }
-
 .nav-container .nav-content {
     width: 219px;
     height: 32px;
 }
-
 .nav-container .nav-logo h2 {
     color: #FFFFFF;
     font-size: 32px;
     font-weight: 800;
 }
-
 .nav-logo {
     margin-top: 30px;
     margin-left: 200px;
 }
-
 .nav-container .nav-logo .wave {
     color: rgba(0, 0, 255, 0.918);
     font-weight: 800;
 }
-
 .about-container {
     margin-top: 36.5px;
 }
-
 .about {
     display: flex;
     gap: 32px;
     text-decoration: none;
     list-style-type: none;
 }
-
 .about ul {
     text-decoration: none;
 
 }
-
 .about li {
     font-size: 16px;
     font-weight: 500;
     color: #FFFFFF;
 }
-
 .top-btn:hover {
     background: burlywood;
 }
-
 .btn1 {
     margin-top: 24px;
     margin-right: 200px;
@@ -85,13 +72,39 @@
     background: linear-gradient(rgba(255, 0, 0, 0.726), rgba(0, 0, 255, 0.353));
 }
 
+@media screen and (max-width: 576px) {
+    .nav-container {
+        height: auto;
+        padding: 16px;
+    }
+    .container {
+        width: 100%;
+        align-items: center;
+    }
+    .nav-logo {
+        margin: 0;
+    }
+    .nav-container .nav-logo h2 {
+        font-size: 22px;
+    }
+    .about-container {
+        display: none;
+    }
+    .btn1 {
+        display: none;
+    }
+    .nav-content {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
 
 .font-inter {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
 }
-
 .banner {
     height: 760px;
     max-width: 1600px;
@@ -99,14 +112,12 @@
     /* width: 100%; */
     background: url("./assets/hero-bg.png");
 }
-
 .banner .banner-box {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-
 .banner .banner-items {
     width: 550px;
     height: 500px;
@@ -128,7 +139,6 @@
     top: 275px;
 
 }
-
 .top-icon {
     position: absolute;
     left: 877px;
@@ -148,13 +158,11 @@
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
 
 }
-
 .banner-content {
     width: 550px;
     height: 168px;
     margin: 0 auto;
 }
-
 .banner-content h1 {
     text-align: center;
     font-size: 60px;
@@ -163,7 +171,6 @@
     font-weight: 800;
     color: rgba(255, 255, 255, 1);
 }
-
 .banner-content .items {
     color: rgba(255, 255, 255, 1);
     font-size: 16px;
@@ -171,7 +178,6 @@
     margin: 0 auto;
     text-align: center;
 }
-
 .btn2 {
     display: flex;
     gap: 8px;
@@ -179,7 +185,6 @@
     align-items: center;
     justify-content: center;
 }
-
 .btn3 {
     width: 201px;
     height: 44px;
@@ -191,7 +196,6 @@
     border: none;
     cursor: pointer;
 }
-
 .btn4 {
     width: 147px;
     height: 44px;
@@ -204,6 +208,74 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 576px) {
+    .banner {
+        height: auto;
+        padding: 60px 16px 80px;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+    .banner-box {
+        width: 100%;
+        align-items: center;
+    }
+    .banner-items {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-bottom: 32px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .banner-items .bg-img {
+        width: 220px;
+        height: 220px;
+    }
+    .top-img {
+        width: 110px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .top-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        left: auto;
+        width: 60px;
+        height: 28px;
+        font-size: 14px;
+    }
+    .banner-content {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .banner-content h1 {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    .banner-content .items {
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .btn2 {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 28px;
+    }
+    .btn3,
+    .btn4 {
+        width: 100%;
+        max-width: 260px;
+        height: 44px;
+    }
+}
 .podcast-container {
     max-width: 1600px;
     max-height: 647px;
@@ -219,7 +291,6 @@
     align-items: center;
     gap: 80;
 }
-
 .podcast .podcast-details {
     max-width: 1200px;
     max-height: 222px;
@@ -230,14 +301,12 @@
     gap: 16;
     padding-bottom: 50px;
 }
-
 .podcast-details h2 {
     color: #FFFFFF;
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
 }
-
 .podcast-details p {
     max-width: 1200px;
     max-height: 148px;
@@ -248,14 +317,12 @@
     font-size: 16px;
 
 }
-
 .podcast hr {
     max-width: 1200px;
     height: 0;
     border: 1px solid var(--#FFFFFF, rgba(255, 255, 255, 1));
     opacity: 0.1;
 }
-
 .stat-container {
     width: 1200px;
     height: 94px;
@@ -269,7 +336,6 @@
 .podcast-container hr {
     margin-top: 80px;
 }
-
 .stat h1 {
     color: #00FF88;
     font-style: Black;
@@ -277,7 +343,6 @@
     font-weight: 900;
     text-align: center;
 }
-
 .stat p {
     color: #FFFFFF;
     font-size: 16px;
@@ -288,44 +353,36 @@
     .podcast-container {
         padding-bottom: 80px;
     }
-
     .podcast {
         padding: 48px 16px 72px;
         text-align: center;
     }
-
     .podcast-details {
         width: 100%;
     }
-
     .podcast-details h2 {
         font-size: 26px;
         margin-bottom: 16px;
     }
-
     .podcast-details p {
         font-size: 14px;
         line-height: 1.6;
         opacity: 0.85;
     }
-
     .podcast hr {
         width: 100%;
         margin: 40px 0;
     }
-
     .stat-container {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px; 
+        gap: 24px;
         margin-bottom: 60px;
     }
-
     .stat h1 {
         font-size: 36px;
     }
-
     .stat p {
         font-size: 13px;
     }
@@ -337,8 +394,8 @@
     padding: 80px 20px;
     background: linear-gradient(180deg, #1b0636, #0f0220);
 }
+
 .why-techwave h2 {
-    /* background-color: #cfc3ff; */
     width: 1200px;
     height: 59px;
     color: #FFFFFF;
@@ -350,6 +407,7 @@
     margin-right: 200px;
 
 }
+
 .grid {
     width: 1200px;
     height: 783px;
@@ -374,46 +432,38 @@
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
-
 .card h3 {
     font-size: 24px;
     margin-bottom: 10px;
     font-weight: 700px;
     color: #FFFFFF;
 }
-
 .card p {
     font-size: 16px;
     line-height: 24px;
     color: #ecd0d0;
     font-weight: 400;
 }
-
 .icon {
     font-size: 30px;
     margin-bottom: 15px;
 }
-
 .card-1 {
     grid-area: card1;
     padding-top: 107px;
 }
-
 .card-2 {
     grid-area: card2;
     padding-top: 40px;
 }
-
 .card-3 {
     grid-area: card3;
     padding-top: 40px;
 }
-
 .card-4 {
     grid-area: card4;
     padding-top: 45px;
 }
-
 .card-5 {
     grid-area: card5;
     padding-top: 55px;
@@ -425,6 +475,7 @@
         height: auto;
         padding: 60px 16px;
     }
+
     .why-techwave h2 {
         width: 100%;
         font-size: 28px;
@@ -443,7 +494,6 @@
             "card4"
             "card5";
     }
-
     .card {
         padding: 24px;
         border-radius: 16px;
@@ -452,12 +502,10 @@
     .icon {
         margin-bottom: 12px;
     }
-
     .icon img {
         width: 32px;
         height: 32px;
     }
-
     .card h3 {
         font-size: 18px;
         margin-bottom: 8px;
@@ -467,7 +515,6 @@
         font-size: 14px;
         line-height: 1.6;
     }
-
     .card-1,
     .card-2,
     .card-3,
@@ -477,7 +524,6 @@
     }
 
 }
-
 .featured-section {
     max-width: 1600px;
     height: 1276px;
@@ -487,7 +533,6 @@
 }
 
 .section-container {
-    /* background-color: aliceblue; */
     max-width: 1200px;
     height: 539px;
     margin-top: 0;
@@ -555,7 +600,6 @@
     z-index: 2;
     transition: transform 0.3s;
 }
-
 .play-btn {
     position: absolute;
     inset: 0;
@@ -568,13 +612,11 @@
     place-items: center;
     font-size: 20px;
 }
-
 .episode-card h3 {
     font-size: 24px;
     font-weight: 700;
     color: #FFFFFF;
 }
-
 .episode-card p {
     font-size: 16px;
     font-weight: 400;
@@ -585,11 +627,9 @@
     color: #2cffb3;
     font-size: 14px;
 }
-
 .host-container {
     margin-top: 120px;
 }
-
 .host-card {
     max-height: 480px;
     background: linear-gradient(180deg, #2d145d, #1a0736);
@@ -598,35 +638,29 @@
     display: flex;
     gap: 25px;
     align-items: center;
-    /* background-color: #00FF88; */
 }
-
 .host-card img {
     max-width: 200px;
     max-height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
-
 .host-info h3 {
     font-size: 32px;
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 10px;
 }
-
 .host-info p {
     font-size: 16px;
     color: #ccc;
     line-height: 1.6;
 }
-
 .socials {
     display: flex;
     gap: 12px;
     margin-top: 14px;
 }
-
 .socials span {
     width: 36px;
     height: 36px;
@@ -635,32 +669,26 @@
     display: grid;
     place-items: center;
 }
-
 .socials span img {
     max-width: 20px;
     max-height: 20px;
     border-radius: 50%;
 }
 
-
-
 @media screen and (max-width: 576px) {
     .featured-section {
         height: auto;
         padding: 60px 16px;
     }
-
     .section-container {
         max-width: 100%;
         height: auto;
     }
-
     .section-title {
         font-size: 28px;
         text-align: center;
         margin-bottom: 32px;
     }
-
     .episodes {
         width: 100%;
         height: auto;
@@ -668,7 +696,6 @@
         gap: 24px;
         margin-bottom: 64px;
     }
-
     .episode-card {
         width: 100%;
         height: auto;
@@ -676,22 +703,18 @@
         gap: 16px;
         border-radius: 20px;
     }
-
     .video-box {
         border-radius: 16px;
     }
-
     .custom-play {
         width: 56px;
         height: 56px;
         font-size: 22px;
     }
-
     .episode-card h3 {
         font-size: 18px;
         line-height: 1.4;
     }
-
     .episode-card p {
         font-size: 14px;
         line-height: 1.6;
@@ -700,18 +723,15 @@
     .duration {
         font-size: 13px;
     }
-
     .featured-section .host-container {
         margin-top: 0;
         padding: 0;
     }
-
     .featured-section .host-container .section-title {
         font-size: 26px;
         margin-bottom: 24px;
         text-align: center;
     }
-
     .featured-section .host-card {
         flex-direction: column;
         height: auto;
@@ -719,27 +739,22 @@
         gap: 20px;
         text-align: center;
     }
-
     .featured-section .host-card img {
         width: 150px;
         height: 150px;
         margin: 0 auto;
     }
-
     .featured-section .host-info {
         text-align: center;
     }
-
     .featured-section .host-info h3 {
         font-size: 22px;
         margin-bottom: 10px;
     }
-
     .featured-section .host-info p {
         font-size: 14px;
         line-height: 1.7;
     }
-
     .featured-section .socials {
         justify-content: center;
         margin-top: px;
@@ -758,7 +773,6 @@
 .footer-box {
     margin-top: 120px;
 }
-
 .footer-container {
     width: 1360px;
     height: 172px;
@@ -767,7 +781,6 @@
     align-items: center;
 
 }
-
 .footer-container h1 {
     font-size: 56px;
     color: #FFFFFF;
@@ -793,18 +806,15 @@
     justify-content: center;
     gap: 8px;
 }
-
 .spotify .txt {
     font-size: 16px;
     font-weight: 500;
     color: #ffffffa2;
 }
-
 .spotify .img1 {
     height: 20px;
     width: 20px;
 }
-
 .copyright {
     width: 1360px;
     height: 24px;
