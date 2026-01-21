@@ -40,19 +40,23 @@
     color: rgba(0, 0, 255, 0.918);
     font-weight: 800;
 }
+
 .about-container {
     margin-top: 36.5px;
 }
+
 .about {
     display: flex;
     gap: 32px;
     text-decoration: none;
     list-style-type: none;
 }
+
 .about ul {
     text-decoration: none;
 
 }
+
 .about li {
     font-size: 16px;
     font-weight: 500;
@@ -80,6 +84,8 @@
     border: none;
     background: linear-gradient(rgba(255, 0, 0, 0.726), rgba(0, 0, 255, 0.353));
 }
+
+
 
 .font-inter {
     font-family: "Inter", sans-serif;
@@ -213,6 +219,7 @@
     align-items: center;
     gap: 80;
 }
+
 .podcast .podcast-details {
     width: 1200px;
     height: 222px;
@@ -248,6 +255,7 @@
     border: 1px solid var(--#FFFFFF, rgba(255, 255, 255, 1));
     opacity: 0.1;
 }
+
 .stat-container {
     width: 1200px;
     height: 94px;
@@ -257,6 +265,7 @@
     padding-top: 80px;
     margin-top: 80px;
 }
+
 .podcast-container hr {
     margin-top: 80px;
 }
@@ -268,6 +277,7 @@
     font-weight: 900;
     text-align: center;
 }
+
 .stat p {
     color: #FFFFFF;
     font-size: 16px;
@@ -281,6 +291,7 @@
     padding: 80px 20px;
     background: linear-gradient(180deg, #1b0636, #0f0220);
 }
+
 .why-techwave h2 {
     /* background-color: #cfc3ff; */
     width: 1200px;
@@ -294,6 +305,7 @@
     margin-right: 200px;
 
 }
+
 .grid {
     width: 1200px;
     height: 783px;
@@ -318,42 +330,116 @@
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
+
 .card h3 {
     font-size: 24px;
     margin-bottom: 10px;
     font-weight: 700px;
     color: #FFFFFF;
 }
+
 .card p {
     font-size: 16px;
     line-height: 24px;
     color: #ecd0d0;
     font-weight: 400;
 }
+
 .icon {
     font-size: 30px;
     margin-bottom: 15px;
 }
+
 .card-1 {
     grid-area: card1;
     padding-top: 107px;
 }
+
 .card-2 {
     grid-area: card2;
     padding-top: 40px;
 }
+
 .card-3 {
     grid-area: card3;
     padding-top: 40px;
 }
+
 .card-4 {
     grid-area: card4;
     padding-top: 45px;
 }
+
 .card-5 {
     grid-area: card5;
     padding-top: 55px;
 }
+
+
+@media (max-width: 576px) {
+
+    .why-techwave {
+        height: auto;
+        padding: 60px 16px;
+    }
+
+    .why-techwave h2 {
+        width: 100%;
+        font-size: 28px;
+        margin: 0 0 32px;
+        text-align: center;
+    }
+
+    /* Grid → single column */
+    .grid {
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5";
+    }
+
+    /* Cards */
+    .card {
+        padding: 24px;
+        border-radius: 16px;
+    }
+
+    .icon {
+        margin-bottom: 12px;
+    }
+
+    .icon img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Remove large top paddings from desktop */
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4,
+    .card-5 {
+        padding-top: 24px;
+    }
+
+}
+
 
 
 .featured-section {
@@ -363,12 +449,14 @@
     padding: 120px 200px 120px;
     background-color: #1A0B2E;
 }
+
 .section-container {
     /* background-color: aliceblue; */
     max-width: 1200px;
     height: 539px;
     margin-top: 0;
 }
+
 .section-title {
     color: #FFFFFF;
     text-align: center;
@@ -376,6 +464,7 @@
     font-weight: 700;
     margin-bottom: 40px;
 }
+
 .episodes {
     width: 1200px;
     height: 539px;
@@ -384,6 +473,7 @@
     gap: 30px;
     margin-bottom: 80px;
 }
+
 .episode-card {
     width: 380px;
     height: 440px;
@@ -396,6 +486,7 @@
     border-radius: 24px;
     padding: 16px;
 }
+
 .video-box {
     position: relative;
     width: 100%;
@@ -404,6 +495,7 @@
     overflow: hidden;
     cursor: pointer;
 }
+
 .video-box iframe {
     position: absolute;
     inset: 0;
@@ -411,6 +503,7 @@
     height: 100%;
     border: none;
 }
+
 .custom-play {
     position: absolute;
     inset: 0;
@@ -426,6 +519,7 @@
     z-index: 2;
     transition: transform 0.3s;
 }
+
 .play-btn {
     position: absolute;
     inset: 0;
@@ -438,55 +532,68 @@
     place-items: center;
     font-size: 20px;
 }
+
 .episode-card h3 {
     font-size: 24px;
     font-weight: 700;
     color: #FFFFFF;
 }
+
 .episode-card p {
     font-size: 16px;
     font-weight: 400;
     color: #d99e9e;
 }
+
 .duration {
     color: #2cffb3;
     font-size: 14px;
 }
+
 .host-container {
     margin-top: 120px;
 }
 
 .host-card {
-    height: 280px;
+    max-height: 480px;
     background: linear-gradient(180deg, #2d145d, #1a0736);
     border-radius: 18px;
     padding: 30px;
     display: flex;
     gap: 25px;
     align-items: center;
+    /* background-color: #00FF88; */
 }
+
 .host-card img {
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
+
 .host-info h3 {
     font-size: 32px;
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 10px;
 }
+
 .host-info p {
     font-size: 16px;
     color: #ccc;
     line-height: 1.6;
 }
+
+
+
+
 .socials {
     display: flex;
     gap: 12px;
     margin-top: 14px;
 }
+
 .socials span {
     width: 36px;
     height: 36px;
@@ -495,10 +602,115 @@
     display: grid;
     place-items: center;
 }
+
 .socials span img {
-    width: 20px;
-    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
     border-radius: 50%;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .featured-section {
+        height: auto;
+        padding: 60px 16px;
+    }
+
+    .section-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section-title {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .episodes {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 64px;
+    }
+
+    .episode-card {
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        gap: 16px;
+        border-radius: 20px;
+    }
+
+    .video-box {
+        border-radius: 16px;
+    }
+
+    .custom-play {
+        width: 56px;
+        height: 56px;
+        font-size: 22px;
+    }
+
+    .episode-card h3 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .episode-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .duration {
+        font-size: 13px;
+    }
+
+    .featured-section .host-container {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .featured-section .host-container .section-title {
+        font-size: 26px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .featured-section .host-card {
+        flex-direction: column;
+        height: auto;
+        padding: 28px 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .featured-section .host-card img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .featured-section .host-info {
+        text-align: center;
+    }
+
+    .featured-section .host-info h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .featured-section .host-info p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .featured-section .socials {
+        justify-content: center;
+        margin-top: px;
+    }
 }
 
 .footer-section {
@@ -509,9 +721,11 @@
     flex-direction: column;
     align-items: center;
 }
+
 .footer-box {
     margin-top: 120px;
 }
+
 .footer-container {
     width: 1360px;
     height: 172px;
@@ -520,10 +734,12 @@
     align-items: center;
 
 }
+
 .footer-container h1 {
     font-size: 56px;
     color: #FFFFFF;
 }
+
 .footer-container h1 span {
     color: blueviolet;
 }
