@@ -206,7 +206,7 @@
 
 .podcast-container {
     max-width: 1600px;
-    height: 647px;
+    max-height: 647px;
 }
 
 .podcast {
@@ -221,8 +221,8 @@
 }
 
 .podcast .podcast-details {
-    width: 1200px;
-    height: 222px;
+    max-width: 1200px;
+    max-height: 222px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -239,8 +239,8 @@
 }
 
 .podcast-details p {
-    width: 1200px;
-    height: 148px;
+    max-width: 1200px;
+    max-height: 148px;
     text-align: center;
     font-size: 16px;
     color: #FFFFFF;
@@ -250,7 +250,7 @@
 }
 
 .podcast hr {
-    width: 1200px;
+    max-width: 1200px;
     height: 0;
     border: 1px solid var(--#FFFFFF, rgba(255, 255, 255, 1));
     opacity: 0.1;
@@ -284,6 +284,52 @@
     font-weight: 400px;
 }
 
+@media screen and (max-width: 576px) {
+    .podcast-container {
+        padding-bottom: 80px;
+    }
+
+    .podcast {
+        padding: 48px 16px 72px;
+        text-align: center;
+    }
+
+    .podcast-details {
+        width: 100%;
+    }
+
+    .podcast-details h2 {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+    .podcast-details p {
+        font-size: 14px;
+        line-height: 1.6;
+        opacity: 0.85;
+    }
+
+    .podcast hr {
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    .stat-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px; 
+        margin-bottom: 60px;
+    }
+
+    .stat h1 {
+        font-size: 36px;
+    }
+
+    .stat p {
+        font-size: 13px;
+    }
+}
 
 .why-techwave {
     max-width: 1600px;
@@ -291,7 +337,6 @@
     padding: 80px 20px;
     background: linear-gradient(180deg, #1b0636, #0f0220);
 }
-
 .why-techwave h2 {
     /* background-color: #cfc3ff; */
     width: 1200px;
@@ -305,7 +350,6 @@
     margin-right: 200px;
 
 }
-
 .grid {
     width: 1200px;
     height: 783px;
@@ -375,21 +419,18 @@
     padding-top: 55px;
 }
 
-
 @media screen and (max-width: 576px) {
 
     .why-techwave {
         height: auto;
         padding: 60px 16px;
     }
-
     .why-techwave h2 {
         width: 100%;
         font-size: 28px;
         margin: 0 0 32px;
         text-align: center;
     }
-
     .grid {
         width: 100%;
         height: auto;
@@ -786,17 +827,21 @@
         padding: 40px 16px;
         text-align: center;
     }
+
     .footer-box {
         margin-top: 0;
     }
+
     .footer-container {
         width: 100%;
         height: auto;
     }
+
     .footer-container h1 {
         font-size: 36px;
         margin-bottom: 16px;
     }
+
     .footer-menu {
         width: 100%;
         height: auto;
@@ -804,16 +849,20 @@
         gap: 16px;
         margin-top: 20px;
     }
+
     .spotify {
         justify-content: center;
     }
+
     .spotify .txt {
         font-size: 14px;
     }
+
     .copyright {
         width: 100%;
         margin-top: 24px;
     }
+
     .copyright p {
         font-size: 13px;
         text-align: center;
