@@ -376,7 +376,7 @@
 }
 
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
 
     .why-techwave {
         height: auto;
@@ -389,8 +389,6 @@
         margin: 0 0 32px;
         text-align: center;
     }
-
-    /* Grid → single column */
     .grid {
         width: 100%;
         height: auto;
@@ -403,8 +401,6 @@
             "card4"
             "card5";
     }
-
-    /* Cards */
     .card {
         padding: 24px;
         border-radius: 16px;
@@ -423,24 +419,17 @@
         font-size: 18px;
         margin-bottom: 8px;
     }
-
     .card p {
         font-size: 14px;
         line-height: 1.6;
     }
 
-    /* Remove large top paddings from desktop */
-    .card-1,
-    .card-2,
-    .card-3,
-    .card-4,
-    .card-5 {
+    .card-1, .card-2, .card-3, .card-4, .card-5    
+     {
         padding-top: 24px;
     }
 
 }
-
-
 
 .featured-section {
     max-width: 1600px;
@@ -584,9 +573,6 @@
     color: #ccc;
     line-height: 1.6;
 }
-
-
-
 
 .socials {
     display: flex;
